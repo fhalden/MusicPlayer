@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.MainActivity">
+
+    <TextView
+        android:id="@+id/moving_pictures"
+        style="@style/CategoryStyle"
+        android:background="@color/category_songs"
+        android:text="@string/moving_pictures" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/fifty_second_street"
+        style="@style/CategoryStyle"
+        android:background="@color/category_albums"
+        android:text="@string/fifty_second_street" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/garbage_id"
+        style="@style/CategoryStyle"
+        android:background="@color/category_artists"
+        android:text="@string/garbage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/off_the_wall"
+        style="@style/CategoryStyle"
+        android:background="@color/category_artists"
+        android:text="@string/off_the_wall" />
+
+
+</LinearLayout>
