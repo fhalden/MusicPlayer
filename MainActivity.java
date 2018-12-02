@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.TextView;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the songs category
-        TextView songs = findViewById(R.id.songs);
+        // Find the View that shows the songs button
+        Button songsButton = findViewById(R.id.songs_button);
 
         // Set a click listener on that View
-        songs.setOnClickListener(new OnClickListener() {
+        songsButton.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the albums category
-        TextView albums = findViewById(R.id.albums);
+        // Find the View that shows the albums button.
+        Button albumsButton = findViewById(R.id.album_button);
 
         // Set a click listener on that View
-        albums.setOnClickListener(new OnClickListener() {
+        albumsButton.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {

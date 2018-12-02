@@ -24,17 +24,18 @@ public class SongsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_songs);
         MusicLibrary musicLibrary = new MusicLibrary();
 
-        final ArrayList songs = musicLibrary.getSongList();
+       final ArrayList songs = musicLibrary.getSongList();
 
 
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
         SongAdapter adapter = new SongAdapter(this, songs);
-
         final ListView listView = findViewById(R.id.list);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Object listItem = listView.getItemAtPosition(position);

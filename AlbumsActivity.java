@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.TextView;
+import android.widget.Button;
 
 public class AlbumsActivity extends AppCompatActivity {
 
@@ -16,11 +16,12 @@ public class AlbumsActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_albums.xml layout file
         setContentView(R.layout.activity_albums);
 
-        // Moving Pictures Text View
-        final TextView movingPictures = findViewById(R.id.moving_pictures);
+        // Moving Pictures Button
+        final Button movingPicturesButton = findViewById(R.id.moving_pictures_button);
+        movingPicturesButton.setText("Queue");
         final MusicLibrary albumSongList = new MusicLibrary();
         // Set a click listener on that View
-        movingPictures.setOnClickListener(new OnClickListener() {
+        movingPicturesButton.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
@@ -32,11 +33,11 @@ public class AlbumsActivity extends AppCompatActivity {
             }
         });
 
-        // 52nd Street Text View
-        TextView fiftySecondStreet = findViewById(R.id.fifty_second_street);
-
+        // 52nd Street Button
+        Button fiftySecondStreetButton = findViewById(R.id.fifty_second_street_button);
+        fiftySecondStreetButton.setText("Queue");
         // Set a click listener on that View
-        fiftySecondStreet.setOnClickListener(new OnClickListener() {
+        fiftySecondStreetButton.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
@@ -48,11 +49,11 @@ public class AlbumsActivity extends AppCompatActivity {
             }
         });
 
-        // Garbage Text View
-        TextView garbage = findViewById(R.id.garbage_id);
-
+        // Garbage Button
+        Button garbageButton = findViewById(R.id.garbage_button);
+        garbageButton.setText("Queue");
         // Set a click listener on that View
-        garbage.setOnClickListener(new OnClickListener() {
+        garbageButton.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {
@@ -64,11 +65,11 @@ public class AlbumsActivity extends AppCompatActivity {
             }
         });
 
-        // Off The Wall Text View
-        TextView offTheWall = findViewById(R.id.off_the_wall);
-
+        // Off The Wall Button
+        Button offTheWallButton = findViewById(R.id.off_the_wall_button);
+        offTheWallButton.setText("Queue");
         // Set a click listener on that View
-        offTheWall.setOnClickListener(new OnClickListener() {
+        offTheWallButton.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {

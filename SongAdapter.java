@@ -23,15 +23,42 @@ public class SongAdapter extends ArrayAdapter {
     public SongAdapter(Context context, ArrayList<Song> songs) {
         super(context, 0, songs);
     }
-
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, final View convertView, ViewGroup parent) {
         // Check if an existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.song_list_item, parent, false);
         }
+
+
+
+
+
+
+
+
+
+
+
+//        playButton.setOnClickListener(new OnClickListener()
+//        {
+//            @Override
+//            public void onClick(View v)
+//            {
+//             Log.v("onClickListener","YOU GOT THIS FAR");
+//
+//
+//
+//            // Song nowPlayingSong = (Song) songs.get(position);
+        //   Intent NowPlayingIntent = new Intent(getContext(),NowPlaying.class);
+         //       NowPlayingIntent.putExtra("now_playing", nowPlayingSong);
+
+
+
+
+
 
         // Get the {@link Song} object located at this position in the list
         Song currentSong = (Song) getItem(position);
@@ -53,10 +80,10 @@ public class SongAdapter extends ArrayAdapter {
         //Get the cover art from the currentSong object and set it in the  coverArt ImageView.
         coverArtView.setImageResource(currentSong.getImageResourceId());
 
-        //Find The Play Button.
         Button playButton = listItemView.findViewById(R.id.play_button);
-                playButton.setText("Play");
-
+        playButton.setText("Play");
+        playButton.setFocusable(false);
+        playButton.setClickable(false);
 
 
 

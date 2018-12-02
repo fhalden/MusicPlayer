@@ -56,6 +56,8 @@ public class AlbumSongAdapter extends ArrayAdapter {
         //Find The Play Button.
         Button playButton = listItemView.findViewById(R.id.play_button);
         playButton.setText("Play");
+        playButton.setFocusable(false);
+        playButton.setClickable(false);
 
 
 
