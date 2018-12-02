@@ -54,5 +54,4 @@ public class AlbumSongsActivity extends AppCompatActivity {
 
 
     }
-
 }
